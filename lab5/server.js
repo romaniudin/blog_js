@@ -8,7 +8,7 @@ app.use(bodyPasrer.urlencoded({extended: false}))
 aapp.use(express.static('public'))
 
 app.get('/', (req,res) => {
-    res.
+
 })
 
 
