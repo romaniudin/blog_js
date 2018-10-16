@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,22 +7,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Home</title>
+    <title>blog post</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
 </head>
 
 <body>
-        <% include partials/nav %>
-    <% blogs.forEach(blog => {%>
-        <div class="container">
-            <div class="jumbotron">
-                <h1><%= blog.title%></h1>
-                <p><%= blog.summary%></p>
-                <a href="/blog/<%=blog.id%>">read more</a>
-            </div>
+    <div class="container">
+        <div class="jumbotron">
+            <h1>
+                <%=blog.author%>
+            </h1>
+            <p>
+                <%=blog.title%>
+            </p>
+            <p>
+                <%=blog.content%>
+            </p>
         </div>
-        <%}) %>
+    </div>
 </body>
 
 </html>
