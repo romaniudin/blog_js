@@ -19,9 +19,9 @@ app.get('/blog/:id', (req, res) => {
     })
 })
 app.post('/addpost', (req, res) => {
-   const author = req.body.author
-   const content = req.body.content
-//    const { author, content } = req.body
+//    const author = req.body.author
+//    const content = req.body.content
+   const { author, content } = req.body
    blogs.push({
     id: 'blog-title-4',
     title: 'Blog Title 1',
