@@ -1,14 +1,14 @@
 const express = require('express')
 const bodyPasrer = require('body-parser')
-
-const port = porocess.env.PORT || 8080 
+const app = express()
+const port = process.env.PORT || 8080 
 
 app.set('view engine', 'ejs')
 app.use(bodyPasrer.urlencoded({extended: false}))
 app.use(express.static('public'))
 
 app.get('/', (req,res) => {
-    
+    res.render('index', {blogs})
 })
 
 
